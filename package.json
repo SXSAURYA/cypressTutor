@@ -1,0 +1,24 @@
+{
+  "name": "cypresstutor",
+  "version": "1.0.0",
+  "description": "this is just for cypress demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run",
+    "headedTest": "npm run test -- --headed",
+    "reporterTest" : "npm run test -- --reporter mocheawesome",
+    "chromeTest": "npm run test -- --headed --browser=chrome",
+    "SingleTest": "npm run test -- --headed --spec=\"cypress/integration/example/FirstTest.spec.js\""
+  },
+  "author": "Ullas",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^8.4.1",
+    "cypress-iframe": "^1.0.1",
+    "mocha": "^5.2.0",
+    "mochawesome": "^6.2.1"
+  },
+  "dependencies": {
+    "faker": "^5.5.3"
+  }
+}
